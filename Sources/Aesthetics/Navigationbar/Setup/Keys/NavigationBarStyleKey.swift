@@ -11,7 +11,7 @@ struct NavigationBarStyleKey: EnvironmentKey {
     static let defaultValue = NavigationBarStyle.standard
 }
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var navigationBarStyle: NavigationBarStyle {
         get { self[NavigationBarStyleKey.self] }
         set { self[NavigationBarStyleKey.self] = newValue }
